@@ -16,6 +16,6 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 ### Criacionais
 - [X] Factory Method
 - [X] Abstract Method
-- [ ] Builder
+- [X] Builder
 - [ ] Prototype
 - [ ] Singleton

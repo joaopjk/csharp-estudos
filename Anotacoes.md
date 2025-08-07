@@ -30,3 +30,17 @@ São padrões de design que lidam com mecanismos de criação de objetos
 - Fornece uma interface para a criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas
 - A interface fornecida define os métodos e cada método cria um objeto
 - O padrão cria objetos por meio da composição e produz famílias de produtos onde as fábricas concretas implementam os métodos para criar produtos
+
+### Builder
+- Permite a separação da construção de um objeto complexo da sua representação, de forma que o mesmo processo de construção possa criar diferentes
+representações
+- Pode produzir diferentes tipos e representações de um objeto usando o mesmo código de construção
+- Constrói um objeto complexo usando muitos objetos simples e uma abordagem passo a passo
+
+### Fluent Builder
+- Fluent builder é um estilo de codificação que força o desenvolvedor a criar o objeto em sequência, chamando cada método setter, um após o outro, até
+que todos os atributos necessários sejam configurados
+- Este padrãp fornece uma interface fluída o que torna o código muito mais fácil de ler
+- A Fluent interface é uma API orientada a objetos cujo design se baseia no encadeamento de métodos cujo objetivo é aumentar a legibilidade do código
+criando uma linguagem específica do domínio
+- LINQ é um tipo de programação fluente

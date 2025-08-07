@@ -61,3 +61,30 @@ custosa e suportar clonagem barata de um protótipo pré-criado
 ## Singleton
 - Garante que uma classe tenha somente uma instância fornecendo um ponto de acesso global a ela
 - Thread-safe sem lock: Criar a classe como static e ela só será executada com a propriedade instance apenas quando for chamada pela primeira vez
+
+---
+
+# Padrões Estruturais
+
+Padrões estruturais são padrões de design que tratam da composição de classes e objetos para formar estruturas maiores e mais flexíveis. Eles 
+facilitam o design ao identificar maneiras simples de realizar relacionamentos entre entidades, promovendo reutilização, desacoplamento e organização
+do código.
+
+## Adapter
+- Adapta uma interface em outra de acordo com a expectativa do cliente
+- Permite a colaboração de objetos com interfaces incompatíveis
+- Conhecido como Invólucro (Wrapper)
+- Converte a interface de uma clsse em outra
+- Envolver (Wrap) uma classe existente com uma nova interface
+- Introduzir um componente legado em um novo sistema
+- *Adaptador de Objeto*: Essa implementação usa o princípio de composição de objetos. O adaptador implemente a interface de um objeto e encobre o outro
+- *Adaptador de Classe*: Essa implementação usa a herança: o adaptador herda interfaces de ambos os objetos ao mesmo tempo
+### Exemplos de uso
+- Quando um objeto precisa usar uma classe existente com uma interface incompatível
+- Quando você deseja criar uma classe reutilizável que coopere como classes que não possuem interfaces compatíveis
+### Vantagens
+- Aumenta a reutilização de código
+- Você pode usar código entre plataformas diferentes
+- Permite a interação de dois ou mais objetos incompatíveis
+### Desvantagens
+- A complexidade geral do código aumenta porque você precisa introduzir um conjunto de novas interfaces e classes

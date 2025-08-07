@@ -19,3 +19,23 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Builder
 - [X] Prototype
 - [X] Singleton
+### Estruturais
+- [ ] Adapter
+- [ ] Bridge
+- [ ] Composite
+- [ ] Decorator
+- [ ] Facade
+- [ ] Flyweight
+- [ ] Proxy
+### Comportamentais
+- [ ] Chain of Responsibility
+- [ ] Command
+- [ ] Interpreter
+- [ ] Iterator
+- [ ] Mediator
+- [ ] Memento
+- [ ] Observer
+- [ ] State
+- [ ] Strategy
+- [ ] Template Method
+- [ ] Visitor

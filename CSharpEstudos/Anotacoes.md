@@ -60,3 +60,4 @@ custosa e suportar clonagem barata de um protótipo pré-criado
 
 ## Singleton
 - Garante que uma classe tenha somente uma instância fornecendo um ponto de acesso global a ela
+- Thread-safe sem lock: Criar a classe como static e ela só será executada com a propriedade instance apenas quando for chamada pela primeira vez

@@ -11,3 +11,11 @@ Este espaço é dedicado a registrar tudo o que venho aprendendo sobre a linguag
 Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organizada, com exemplos de código, anotações teóricas e links úteis para consulta.
 
 ---
+
+## 📚 Padrões de Projeto
+### Criacionais
+- [ ] Factory Method
+- [ ] Abstract Method
+- [ ] Builder
+- [ ] Prototype
+- [ ] Singleton

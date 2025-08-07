@@ -1,0 +1,21 @@
+# Padrões Criacionais
+
+São padrões de design que lidam com mecanismos de criação de objetos
+- *Encapsulamento*: Reduz a complexidade e promovem a reutilização de código.
+- *Flexibilidade*: Facilitam a adição de novos tipos de objetos
+- *Desacoplamento*: Reduzem a dependência entre classes e permitem isolar mudanças
+- *Manutenção e testabilidade*: A criação dos objetos está centralizada, facilitando a manutenção e o desenvolvimento de testes
+- *Consistência*: Os objetos são criados da mesma forma em todo o sistema, promovendo, por exemplo, standardização entre a equipe de desenvolvimento
+- *Eficiência*: Padrões como o Singleton podem ajudar a otimizar recursos e reduzir potenciais bugs
+
+## Factory Method
+- Factory é um objeto que é usado para criar outros objetos
+- No padrão Factory, criamos um objeto sem expor a lógica de criação ao cliente e referimos ao objeto recém-criado usando uma interface comum
+- Tipos de Factory:
+  - Simple Factory: mais usado, porém não está no catálogo GoF
+  - Factory Method
+  - Abstract Factory
+
+### Simple Factory
+- Cria objetos sem expor a lógica de criação ao cliente
+- Refere-se ao objeto recém-criado usando uma interface comum

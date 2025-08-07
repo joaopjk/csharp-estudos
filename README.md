@@ -14,7 +14,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 
 ## 📚 Padrões de Projeto
 ### Criacionais
-- [ ] Factory Method
+- [X] Factory Method
 - [ ] Abstract Method
 - [ ] Builder
 - [ ] Prototype

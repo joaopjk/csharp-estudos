@@ -18,4 +18,4 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Abstract Method
 - [X] Builder
 - [X] Prototype
-- [ ] Singleton
+- [X] Singleton

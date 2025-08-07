@@ -50,3 +50,13 @@ criando uma linguagem específica do domínio
 - Permite copiar objetos existentes sem tornar seu código dependente de suas classes
 - Delega o processo de clonagem para o próprio objeto que está sendo clonado
 - Oferece uma maneira de criar novos objetos a partir da instância existente do objeto
+- Evita criar um novo objeto utilizando a palavra-chave new, o que diminui o custo de memória
+- Evita que as subclasses que criam objetos funcionem como o padrão abstract factory
+- É útil quando a inicialização do objeto é cara e possui parâmetros de inicialização. Nesse contexto, o prototype pode evitar a criação do zedo que é
+custosa e suportar clonagem barata de um protótipo pré-criado
+- É o único entre os outros padrões de criação, pois não requer uma classe apenas um objeto
+- Não requer o uso de subclases mais precisa de uma inicialização
+- A clonagem de objetos complexos que contenham referências circulares pode ser problemática
+
+## Singleton
+- Garante que uma classe tenha somente uma instância fornecendo um ponto de acesso global a ela

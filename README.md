@@ -6,7 +6,7 @@ Este espaço é dedicado a registrar tudo o que venho aprendendo sobre a linguag
 
 ---
 
-## 🎯 Objetivo
+# 🎯 Objetivo
 
 Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organizada, com exemplos de código, anotações teóricas e links úteis para consulta.
 
@@ -15,7 +15,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 ## 📚 Padrões de Projeto
 ### Criacionais
 - [X] Factory Method
-- [ ] Abstract Method
+- [X] Abstract Method
 - [ ] Builder
 - [ ] Prototype
 - [ ] Singleton

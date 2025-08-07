@@ -25,3 +25,8 @@ São padrões de design que lidam com mecanismos de criação de objetos
 - O Factory Method permite que uma classe adie a instanciação que ela usa para as subclasses
 - O padrão usa herença e depdente de uma subclasse para lidar com a instanciação do objeto desejado
 - Usado para criar objetos sem expor a lógica de criação ao cliente
+
+### Abstract Factory
+- Fornece uma interface para a criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas
+- A interface fornecida define os métodos e cada método cria um objeto
+- O padrão cria objetos por meio da composição e produz famílias de produtos onde as fábricas concretas implementam os métodos para criar produtos

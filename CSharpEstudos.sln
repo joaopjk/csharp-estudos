@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentBuilder", "FluentBuilder\FluentBuilder.csproj", "{93E4B0F6-7E2A-42F7-97F1-9A87E58F20B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{8F638890-4F82-488A-9BB8-06661CFDB039}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{93E4B0F6-7E2A-42F7-97F1-9A87E58F20B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93E4B0F6-7E2A-42F7-97F1-9A87E58F20B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93E4B0F6-7E2A-42F7-97F1-9A87E58F20B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F638890-4F82-488A-9BB8-06661CFDB039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F638890-4F82-488A-9BB8-06661CFDB039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F638890-4F82-488A-9BB8-06661CFDB039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F638890-4F82-488A-9BB8-06661CFDB039}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{E129225D-0844-4B8C-BE82-9F11F2FE4F57} = {581D2A7D-04D2-4AA5-9E07-C195A6CCD54E}
 		{E83BBDBE-B5D5-471B-B8CF-D5A8F75D6E73} = {581D2A7D-04D2-4AA5-9E07-C195A6CCD54E}
 		{93E4B0F6-7E2A-42F7-97F1-9A87E58F20B1} = {581D2A7D-04D2-4AA5-9E07-C195A6CCD54E}
+		{8F638890-4F82-488A-9BB8-06661CFDB039} = {581D2A7D-04D2-4AA5-9E07-C195A6CCD54E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9AE6D30-EBED-40A5-9230-6DA18618BCF9}

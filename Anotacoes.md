@@ -16,31 +16,37 @@ São padrões de design que lidam com mecanismos de criação de objetos
   - Factory Method
   - Abstract Factory
 
-### Simple Factory
+## Simple Factory
 - Cria objetos sem expor a lógica de criação ao cliente
 - Refere-se ao objeto recém-criado usando uma interface comum
 
-### Factory Method
+## Factory Method
 - Define uma interface para criar um objeto, mas permite que as subclasses decidam qual classe instanciar
 - O Factory Method permite que uma classe adie a instanciação que ela usa para as subclasses
 - O padrão usa herença e depdente de uma subclasse para lidar com a instanciação do objeto desejado
 - Usado para criar objetos sem expor a lógica de criação ao cliente
 
-### Abstract Factory
+## Abstract Factory
 - Fornece uma interface para a criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas
 - A interface fornecida define os métodos e cada método cria um objeto
 - O padrão cria objetos por meio da composição e produz famílias de produtos onde as fábricas concretas implementam os métodos para criar produtos
 
-### Builder
+## Builder
 - Permite a separação da construção de um objeto complexo da sua representação, de forma que o mesmo processo de construção possa criar diferentes
 representações
 - Pode produzir diferentes tipos e representações de um objeto usando o mesmo código de construção
 - Constrói um objeto complexo usando muitos objetos simples e uma abordagem passo a passo
 
-### Fluent Builder
+## Fluent Builder
 - Fluent builder é um estilo de codificação que força o desenvolvedor a criar o objeto em sequência, chamando cada método setter, um após o outro, até
 que todos os atributos necessários sejam configurados
 - Este padrãp fornece uma interface fluída o que torna o código muito mais fácil de ler
 - A Fluent interface é uma API orientada a objetos cujo design se baseia no encadeamento de métodos cujo objetivo é aumentar a legibilidade do código
 criando uma linguagem específica do domínio
 - LINQ é um tipo de programação fluente
+
+## Prototype
+- Especificar os tipos de objetos a serem criados usando uma instância protótipo e criar novos objetos copiando este protótipo
+- Permite copiar objetos existentes sem tornar seu código dependente de suas classes
+- Delega o processo de clonagem para o próprio objeto que está sendo clonado
+- Oferece uma maneira de criar novos objetos a partir da instância existente do objeto

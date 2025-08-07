@@ -19,3 +19,9 @@ São padrões de design que lidam com mecanismos de criação de objetos
 ### Simple Factory
 - Cria objetos sem expor a lógica de criação ao cliente
 - Refere-se ao objeto recém-criado usando uma interface comum
+
+### Factory Method
+- Define uma interface para criar um objeto, mas permite que as subclasses decidam qual classe instanciar
+- O Factory Method permite que uma classe adie a instanciação que ela usa para as subclasses
+- O padrão usa herença e depdente de uma subclasse para lidar com a instanciação do objeto desejado
+- Usado para criar objetos sem expor a lógica de criação ao cliente

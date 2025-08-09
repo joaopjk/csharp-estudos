@@ -22,7 +22,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 ### Estruturais
 - [X] Adapter
 - [X] Bridge
-- [ ] Composite
+- [X] Composite
 - [ ] Decorator
 - [ ] Facade
 - [ ] Flyweight

@@ -105,3 +105,21 @@ do código.
 - Facilita a extensibilidade
 ### Desvantagens
 - Aumenta a complexidade do código, pois introduz mais classes e interfaces
+
+## Composite
+- Compõe objetos em estrtuturas semelhantes a uma árvore para representar hierarquias parte-todo
+- Permite que os clientes tratem objetos individuais(leafs) e composições de objetos(composites) de maneira uniforme(como um único objeto)
+- Recursividade
+### Estrutura
+- Component: é uma interface que descreve operações comuns a elementos simples ou complexos da árvore
+- Leaf: é um único objeto que não possui subelementos
+- Composite: é um objeto que possui subelementos(leafs ou outros compostos)
+### Exemplos de uso
+- Precisarmos criar uma estrutura em árvore para resolver um problema
+- Precisarmos representar hierarquias parte-todo de objetos
+- Queremos que os clientes ignorem a diferença entre composições de objetos e objetos individuais
+### Vantagens
+- Ajuda a alcançar a uniformidade(uso de funções semelhantes) em toda a hierarquia de objetos que contém tipos de objetos primitivos e compostos
+- Torna mais fácil para o cliente atingir a funcionalidade desejada sem se procupar com o tipo de objeto com o qual está lidando
+### Desvantagens
+- Pode se tornar muit genérico devido à sua uniformidade, tornando difícil restringir objetos que podem ser incluídos no grupo composto

@@ -21,7 +21,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Singleton
 ### Estruturais
 - [X] Adapter
-- [ ] Bridge
+- [X] Bridge
 - [ ] Composite
 - [ ] Decorator
 - [ ] Facade

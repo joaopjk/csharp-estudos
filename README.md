@@ -20,7 +20,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Prototype
 - [X] Singleton
 ### Estruturais
-- [ ] Adapter
+- [X] Adapter
 - [ ] Bridge
 - [ ] Composite
 - [ ] Decorator

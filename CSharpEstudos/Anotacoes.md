@@ -88,3 +88,20 @@ do código.
 - Permite a interação de dois ou mais objetos incompatíveis
 ### Desvantagens
 - A complexidade geral do código aumenta porque você precisa introduzir um conjunto de novas interfaces e classes
+
+## Bridge
+- Desacopla uma abstração de sua implementação para que as duas possam variar de forma independente
+- Divide a lógica de negócio (uma classe maior) em hierarquias de classes separadas que podem ser desenvolvidas de forma independente
+- Separa a interface do objeto de sua implementação
+### Exemplos de uso
+- Quando queremos ocultar os detalhes de implementação do cliente
+- Quando queremos evitar o forte acoplamento entre a abstração e a implementação
+- Quando queremos alterar a implementação sem compilar a abstração
+- Quando queremos compartilhar uma implementação entre vários objetos e isso deve ser escondido do cliente
+### Vantagens
+- Estimula o uso de um código fracamente acoplado
+- Aumenta a capacidade de manutenção e reutilização do código e reduz a duplicação de código
+- Ajuda a promover o princípio Aberto/Fechado (Open/Closed Principle)
+- Facilita a extensibilidade
+### Desvantagens
+- Aumenta a complexidade do código, pois introduz mais classes e interfaces

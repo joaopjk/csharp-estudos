@@ -30,7 +30,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 ### Comportamentais
 - [X] Chain of Responsibility
 - [X] Command
-- [ ] Interpreter
+- [X] Interpreter
 - [ ] Iterator
 - [ ] Mediator
 - [ ] Memento

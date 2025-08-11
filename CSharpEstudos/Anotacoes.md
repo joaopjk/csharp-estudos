@@ -251,3 +251,24 @@ comportamento dos objetos.
 - Um comando pode ser composto por outros commandos e é fácil acrescentar novos comandos(sem mudar classes existentes)
 ### Desvantagens
 - O códgo pode se tornar complexo com o aumento no número de classes criadas para cada comando, dos métodos Action e das muitas associações
+
+## Interpreter
+- Dada uma linguagem, o padrão define uma representação para sua gramática junto com um intérprete que usa a representação para interpretar frases
+na linguagem
+- Usado para avaliar e interpretar as instruções escritas em uma gramática de linguagem ou notações. Ele envolve a implementação de uma interface de
+expressão que diz para interpretar um contexto específico
+- Fornece uma maneira de avaliar a gramática ou expressões da linguagem e pode ser usado em análise SQL, mecanismos de processamento de símbolos, em
+compiladores, etc
+### Exemplos de uso
+- Pode ser usado quando houver uma linguagem para interpretar. Funciona melhorar quando:
+	- Gramática é simples
+	- A eficiência não é uma preocupação crítica
+- Quando puder representar sentenças da linguagem como árvores sintáticas abstratas
+### Vantagens
+- É fácil mudar e estender a gramática. Como o padrão usa classes para representar regras gramaticais, você pode usar herança para alterar ou estender
+a gramática. As expressões existentes podem ser modificadas de forma incremental e as novas expressões podem ser definidas como variações das antigas
+- Implementar a gramática também é fácil. As classes que definme nós na ávores de sintaxe abstrata tem implementações semelhantes. Essas classes são
+fáceis de escrever e, muitas vezes, sua geração pode ser automatizada com um compilador ou gerador de analisador
+### Desvantagens
+- Gramáticas complexas são difíceis de manter. O padrão define pelo menos uma classe para cada regra da gramática. Desta forma, gramáticas contendo
+muitas regras podem ser difíceis de gerenciar e manter

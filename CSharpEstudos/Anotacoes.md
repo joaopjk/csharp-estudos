@@ -208,3 +208,27 @@ antes de encaminhar a solicitação
 - Introduz outra camada de abstração que às vezes pode ser um problema se o código do RealSubject for acessado por alguns dos clientes diretamente e
 alguns deles puderem acessar as classes Proxy
 
+---
+
+# Padrões Comportamentais
+Os padrões de projetos comportamentais focam na interação e comunicação entre objetos, definindo como eles colaboram para realizar tarefas e 
+distribuir responsabilidades. Eles ajudam a tornar o sistema mais flexível, desacoplado e fácil de manter, organizando o fluxo de controle e o 
+comportamento dos objetos.
+
+## Chain of Responsibility
+- Evita acoplar o remetente de uma solicitação a seu receptor, dando a mais de um objeto a chance de lidar com a solicitação
+- Encadeia os objetos receptores e passa a solicitação ao longo da cadeia ate que um objeto a trate
+- Simplifica as interconexões de objetos
+- Evita a dependência entre um objeto recepetor e um objeto solicitante ou destinatário
+### Exemplos de uso
+- Quando tivermos mais de um manipulador para uma solicitação
+- Quando tivermos motivos pelos quais um gerenciador deve passar uma solitação para outra na cadeia
+- Quando tivermos um conjunto de manipuladores que variam de forma dinâmica
+- Quando desejarmos manter a flexibilidade na atribuição de solicitações e manipuladores
+- Quando tivermos uma cadeia muito lógica de manipuladores que devem ser executados em ordem repetidas vezes
+### Vantagens
+- Você pode controlar a ordem de tratamento de solicitações
+- Você pode desacoplar classes que invocam operações de classes que as executam(SRP)
+- Você pode introduzir novos manipuladores no aplicativo sem quebrar o código do cliente existente(Open/Closed Principle)
+### Desvantagens
+- Algumas solicitações podem não serem tratadas dificultando em observar as características em tempo de execução

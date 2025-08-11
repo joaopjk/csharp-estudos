@@ -28,7 +28,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Flyweight
 - [X] Proxy
 ### Comportamentais
-- [ ] Chain of Responsibility
+- [X] Chain of Responsibility
 - [ ] Command
 - [ ] Interpreter
 - [ ] Iterator

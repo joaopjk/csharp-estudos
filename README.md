@@ -24,7 +24,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Bridge
 - [X] Composite
 - [X] Decorator
-- [ ] Facade
+- [X] Facade
 - [ ] Flyweight
 - [ ] Proxy
 ### Comportamentais

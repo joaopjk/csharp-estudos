@@ -141,3 +141,20 @@ do código.
 ### Desvantagens
 - Aumenta a complexidade do código e número de objetos
 
+## Facade
+- Fornece uma interface unificada para um conjunto de interfaces em um subsistema(biblioteca, framework, etc)
+- Define uma interface de nível superior que torna o subsistema mais fácil de usar
+- Fica no topo de um grupo de subsistemas e permite que eles se comuniquem de uma maneira unificada
+### Exemplos de uso
+- Quando queremos simplificar um sequência de operações complexas
+- Quando queremos simplificar a interface com o usuário
+- Quando queremos fornecer uma interface única e uniforme para diversas funcionalidades de um subsistema
+- Quando queremos criar sistemas em camadas. Um facade provê o ponto de entrada para cada camada do subsistema
+### Vantagens
+- Facilita a portabilidade do sistema e sua interação com o subsistema
+- Isola os clientes dos componentes do subsistema reduzindo o número de objetos com os quais o cliente tem que lidar
+- Promove um acoplamento fraco entre o subsistema e o clientes
+### Desvantagens
+- Introduz uma camada adicional entre o cliente e o subsistema, que contribui para a complexidade do código
+- Cria uma dependência entre vários subsistemas, pois vários métodos são chamados a partir deles para servir o cliente
+

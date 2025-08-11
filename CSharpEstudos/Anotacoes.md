@@ -272,3 +272,21 @@ fáceis de escrever e, muitas vezes, sua geração pode ser automatizada com um com
 ### Desvantagens
 - Gramáticas complexas são difíceis de manter. O padrão define pelo menos uma classe para cada regra da gramática. Desta forma, gramáticas contendo
 muitas regras podem ser difíceis de gerenciar e manter
+
+## Iterator
+- Fornece uma maneira de acessar os elementos de um objeto agregado(coleção) sequencialmente sem expor sua representação subjacente
+- Permite o acesso sequencia a elementos de uma coleção sem expor a lógica interna
+- A ideia principal deste padrão é extrair o comportamento transversal de uma coleção para um objeto seperado chamado de Iterador
+### Exemplos de uso
+- Quando sua coleção tiver uma estrutura de dados complexa e você deseja ocultar sua complexidade dos clientes
+- Para reduzir a duplicação do código usada para percorrer coleções no seu aplicativo
+- Quando quiser que seu código seja capaz de percorrer diferentes estruturas de dados ou quando os tipos dessas estruturas forem desconhecidos
+### Vantagens
+- Fornece suporte a iteração para estruturas de dados que originalmente não a possui
+- Permite definir mais de um tipo de iterador
+- Simplifica o código para acessar diferentes tipos de coleções
+- Trata variáveis de todos os tipos, tamanhos e formos uniformemente, cabendo na memória ou não
+- Segue os principios SRP e Open/Closed
+### Desvantagens
+- É menos eficiente ao percorrer elementos de algumas coleções especializadas, usando mais memória do que acesso direto ao elemento
+- Não é recomendado para coleções simples

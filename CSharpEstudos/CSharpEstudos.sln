@@ -54,6 +54,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comportamentais", "Comporta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{0841BB01-4428-4EF6-ADDA-E3FEBEFE08D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{0C533B5D-BB04-43E3-B269-23FF91A53D3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +130,10 @@ Global
 		{0841BB01-4428-4EF6-ADDA-E3FEBEFE08D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0841BB01-4428-4EF6-ADDA-E3FEBEFE08D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0841BB01-4428-4EF6-ADDA-E3FEBEFE08D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C533B5D-BB04-43E3-B269-23FF91A53D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C533B5D-BB04-43E3-B269-23FF91A53D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C533B5D-BB04-43E3-B269-23FF91A53D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C533B5D-BB04-43E3-B269-23FF91A53D3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,6 +159,7 @@ Global
 		{FC8D24D7-CEF0-4144-858C-35AB196F2539} = {7C841606-0CD6-4735-9CAE-341A888CCA0F}
 		{5C3ED098-FCB1-4C0A-9431-641CC30405D7} = {C3391258-5F12-43D9-A80D-FEEF35150699}
 		{0841BB01-4428-4EF6-ADDA-E3FEBEFE08D0} = {5C3ED098-FCB1-4C0A-9431-641CC30405D7}
+		{0C533B5D-BB04-43E3-B269-23FF91A53D3D} = {5C3ED098-FCB1-4C0A-9431-641CC30405D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9AE6D30-EBED-40A5-9230-6DA18618BCF9}

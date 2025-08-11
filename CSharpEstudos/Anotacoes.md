@@ -232,3 +232,22 @@ comportamento dos objetos.
 - Você pode introduzir novos manipuladores no aplicativo sem quebrar o código do cliente existente(Open/Closed Principle)
 ### Desvantagens
 - Algumas solicitações podem não serem tratadas dificultando em observar as características em tempo de execução
+
+## Command
+- Encapsula uma requisição como um objeto, permitindo que clientes parametrizem diferentes requisições, filas ou logs, como a reverter as operações
+- Converte solicitações ou operações simples em objetos
+- Precisa emitir solicitações para objetos sem saber nada sobre a operação solicitada ou o receptor da solicitação
+### Exemplos de uso
+- Parametrizar objetos por uma ação a ser executada
+- Especificar, enfileirar e executar solicitações em tempos diferentes
+- Dar suporte para desfazer operações
+- Estruturar um sistema em torno de operações de alto nível(transações)
+- Reduzir acoplamento entre as requisiçÕes dos clientes e os objetos que as executam
+- Facilitar a implementação de novas operações e tornar mais simples a manutenção das operações
+### Vantagens
+- Desacopla o objeto que invoca a operação daquele que sabe como executá-la
+- Reduz o acoplamento entre os objetos que chama a operação e os objetos que a executam
+- Os comandos são objetos de primeira classe, ou seja, podem ser manipulados e estendidos como qualquer outro objeto
+- Um comando pode ser composto por outros commandos e é fácil acrescentar novos comandos(sem mudar classes existentes)
+### Desvantagens
+- O códgo pode se tornar complexo com o aumento no número de classes criadas para cada comando, dos métodos Action e das muitas associações

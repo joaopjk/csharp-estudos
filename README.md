@@ -29,7 +29,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Proxy
 ### Comportamentais
 - [X] Chain of Responsibility
-- [ ] Command
+- [X] Command
 - [ ] Interpreter
 - [ ] Iterator
 - [ ] Mediator

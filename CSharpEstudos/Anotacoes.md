@@ -184,3 +184,27 @@ especialmente se ele foi anteriormente armazenado como estado intrínseco
   - A maioria dos estados dos objetos Flyweight são compartilhados
   - O estado extrínseco pode ser calculado ou armazenado em cache
 
+## Proxy
+- Fornece um objeto que atua como um substituto para um objeto de serviço real que é usado por um cliente para controlar o acesso a este objeto
+- Permite encapsular a instância de uma classe complexa usando uma instância de outra classe que possui a mesma interface
+- Um proxy é um objeto wrapper(empacotador) que está sendo chamando pelo cliente para acessar o objeto de serviço real, nos bastidores
+- Proxy significa 'no lugar de' ou 'em nome de'(procurador)
+- *Proxy Virtual*: É um espaço reservado para objetos que consomem muitos recursos para serem criados. Neste contexto o objeto real só é criado quando
+um cliente primeiro solicita ou acessa o objeto
+- *Proxy Remoto*: Fornece representação local para um objeto que reside em um espaço de endereço diferente
+- *Proxy de Proteção*: Controla o acesso a um objeto principal. Aqui o objeto de proxy verifica se o chamador tem as permissões de acesso necessárias
+antes de encaminhar a solicitação
+### Exemplos de uso
+- Quando você deseja fornecer um substituto para outro objeto
+- Quando precisarmos de criar objetos sob demanda quando suas operações forem solicitadas
+- Quando temos uma classe com dados sensíveis(que deveriam ser de acesso restrito) e é necessário fornecer o controle de acesso para o objeto original
+- Quando temos que usar classes onde a criação dos objetos é muito demorada e consome muitos recursos
+- Quando devemos permitir o acesso a um objeto remoto usando um objeto local(referenciando o objeto remoto)
+### Vantagens
+- *Proxy Virtual*: permite que você instancie objetos caros no último momento possível
+- *Proxy Remoto*: permite que você faça chamadas de método para objetos que residem em domínios de aplicativo ou serviços totalmente diferentes
+- *Proxy de Proteção*: permite que você controle o acesso a objetos sensíveis
+### Desvantagens
+- Introduz outra camada de abstração que às vezes pode ser um problema se o código do RealSubject for acessado por alguns dos clientes diretamente e
+alguns deles puderem acessar as classes Proxy
+

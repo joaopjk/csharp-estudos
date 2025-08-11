@@ -26,7 +26,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Decorator
 - [X] Facade
 - [X] Flyweight
-- [ ] Proxy
+- [X] Proxy
 ### Comportamentais
 - [ ] Chain of Responsibility
 - [ ] Command

@@ -23,7 +23,7 @@ Consolidar e compartilhar meu conhecimento em **C#** de forma prática e organiz
 - [X] Adapter
 - [X] Bridge
 - [X] Composite
-- [ ] Decorator
+- [X] Decorator
 - [ ] Facade
 - [ ] Flyweight
 - [ ] Proxy

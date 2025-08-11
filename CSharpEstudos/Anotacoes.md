@@ -123,3 +123,21 @@ do código.
 - Torna mais fácil para o cliente atingir a funcionalidade desejada sem se procupar com o tipo de objeto com o qual está lidando
 ### Desvantagens
 - Pode se tornar muit genérico devido à sua uniformidade, tornando difícil restringir objetos que podem ser incluídos no grupo composto
+
+## Decorator
+- Atribui responsabilidades adicionais a um objeto de forma dinânica sem afetar o comportamento de outros objetos da mesma classe
+- Fornece uma alteranativa flexível à herança para estender uma funcionalidade
+- Permite estender(decorar) de forma dinâmica as características(propriedades e comportamentos) de uma classe qualquer
+### Exemplos de uso
+- Quando houver necessidade de anexar ou remover o comportamento de apenas algumas instâncias de uma classe, em vez de todas as instâncias da classe
+- Quando a estensão através da herença não for possível
+- Quando temos uma classe que não pode ser herdada por estarmos herdando de uma outra classe qualquer(herança simples)
+- Queremos adicionar responsabilidades a objetos individuais de forma dinâmica e transparente, sem afetar outros objetos
+- Quando não podemos usar herança(sealed)
+### Vantagens
+- É mais flexível que a herança pois adiciona responsabilidades em tempo de execução e não em tempo de compilação
+- Podemos ter qualquer número de decoradores e em qualquer ordem
+- Estende a funcionalidade do objeto sem afetar outros objetos
+### Desvantagens
+- Aumenta a complexidade do código e número de objetos
+

@@ -158,3 +158,29 @@ do código.
 - Introduz uma camada adicional entre o cliente e o subsistema, que contribui para a complexidade do código
 - Cria uma dependência entre vários subsistemas, pois vários métodos são chamados a partir deles para servir o cliente
 
+## Flyweight
+- Usado para criar um grande número de objetos relacionados sem invocar muito trabalho de sobrecarga ao fazer isso, otimizando o consumo de memória e 
+melhorando a performance
+- Ele consegui isso compartilhando partes do estado do objeto entre vários objetos, assim, ele economiza mémoria armazenando em cache os mesmos dados
+usados por objetos diferentes
+- Cada objeto é chamado de Flyweight e é composto por dois tipos de estados:
+  - Estado Intrínseco: É o estado compartilhado entre os objetos Flyweight. Ele é imutável e não pode ser alterado
+  - Estado Extrínseco: É o estado que varia entre os objetos Flyweight. Ele é passado como parâmetro para os métodos do Flyweight
+### Exemplos de uso
+- Quando muitos objetos semelhantes serão usados e o custo de armazenamento for alto
+- Quando pudermos compartilhar estado entre objetos e precisar criar muitos desses objetos
+- Quando alguns objetos compartilhados facilmente substituiriam muitos objetos não compartilhados
+- Quando precisarmos economizar memória 
+### Vantagens
+- Reduz o uso de memória compartilhando objetos pesados
+- Favorece o Cache de dados permitindo um maior tempo de resposta
+- Aumenta o desempenho reduzindo o número de objetos pesados na memória
+### Desvantagens
+- O objetos flyweights podem introduzir custos de tempo de execução associados à transferência, localização e/ou computação do estado extrínseco,
+especialmente se ele foi anteriormente armazenado como estado intrínseco
+- A aplicação do padrão possui escopo reduzido e de acordo com o GoF 5 condições devem ser atendidas:
+  - O número de objetos que serão criados é grande
+  - O custo de criação de um objeto é alto
+  - A maioria dos estados dos objetos Flyweight são compartilhados
+  - O estado extrínseco pode ser calculado ou armazenado em cache
+

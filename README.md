@@ -36,7 +36,7 @@ consulta.
 - [X] Iterator
 - [X] Mediator
 - [X] Memento
-- [ ] Observer
+- [X] Observer
 - [ ] State
 - [ ] Strategy
 - [ ] Template Method

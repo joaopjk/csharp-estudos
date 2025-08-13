@@ -321,3 +321,25 @@ ser restaurado para esse estado
 - Fornce uma maneira de manter o histórico do ciclo de vida de um objeto
 ### Desvantagens
 - O processo de salvar o estado de um objeto e restaurá-lo mais tarde pode levar algum tempo, ou seja, pode ser prejudicial ao desempenho do sistema
+
+## Observer
+- Define uma dependência um-para-muitos entre objetos para que, quando um objeto mudar de estado, todos os seus dependentes sejam notificados e
+atualizados automaticamente
+- Permite que um objeto notifique outros objetos sobre alterações em seu estado
+- Temos os objeto(subject) que mantém uma lista de seus dependentes(observers) e os notifica automaticamente sobre qualquer mudança de estado,
+chamando seus métodos
+- *Subject*: São os objetos publicadores. Quando ocorre alguma mudança de estado de um subject ele deve notificar todos os seus assinantes
+- *Observers*: Eles são os assinantes. Eles simplismente recebem notificaçÕes sobre as mudanças de estado dos subjects
+### Exemplos de uso
+- Quando uma modificação do estado de um objeto implica modificações em outros objetos
+- Quando um objeto deve ser capaz de notificar outros objetos, mas sem pressupostos sobre os objetos a serem notificados
+- Quando uma abstração possuir dois apectos e um depender do outro
+- Quando não desejamos um forte acoplamento com os objetos que necessitam conhecer estas modificações
+### Vantagens
+- Permite um acoplamento mínimo entre o Subject e os Observers
+- Pode reutilizar Subjects sem reutilizar os Observers e vice-versa
+- Os observers podem ser adicionados sem modificar o subject
+- O Subject e Observer podem pertencer a diferentes camadas de abstração
+### Desvantagens
+- Os assinantes(observers) podem ser notificados em uma ordem imprevisível
+- Pode ocorrer o problema de vazamento de memória devido ao registro explícito e ao cancelamento de registro dos observers

@@ -290,3 +290,18 @@ muitas regras podem ser difíceis de gerenciar e manter
 ### Desvantagens
 - É menos eficiente ao percorrer elementos de algumas coleções especializadas, usando mais memória do que acesso direto ao elemento
 - Não é recomendado para coleções simples
+
+## Mediator
+- Define um objeto que encapsula como um conjunto de objetos interage
+- Promove o acoplamento fraco evitando que os objetos se refiram explicitamente uns aos outros e permite que você varie sua interação de forma 
+independente
+- Permite que um grupo de objetos se comuniquem entre si sem que haja acoplamento entre eles através de um objeto mediador
+- A itenção do padrão é definir um objeto que encapsula como um conjunto de objetos interagem
+### Vantagens
+- Desacoplamento entre os objetos, pois nenhum objeto se conhece na comunicação
+- O fluxo de comunicação está centralizado, com isso, alterações no mediador não afetam seus ouvintes
+- Mudanças podem ser aplicadas facilmente nos objetos, pois são independentes
+- Eliminação de relacionamentos muitos para muitos(substituídos por relacionamentos um para muitos)
+### Desvantagens
+- A centralização pode ser um fonte de gargalos de desempenho e de risco para o sistema em caso de falhas
+- Na prática os mediadores tendem a se tornarem mais complexos

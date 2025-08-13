@@ -34,7 +34,7 @@ consulta.
 - [X] Command
 - [X] Interpreter
 - [X] Iterator
-- [ ] Mediator
+- [X] Mediator
 - [ ] Memento
 - [ ] Observer
 - [ ] State

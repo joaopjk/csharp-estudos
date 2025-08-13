@@ -35,7 +35,7 @@ consulta.
 - [X] Interpreter
 - [X] Iterator
 - [X] Mediator
-- [ ] Memento
+- [X] Memento
 - [ ] Observer
 - [ ] State
 - [ ] Strategy

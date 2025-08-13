@@ -305,3 +305,19 @@ independente
 ### Desvantagens
 - A centralização pode ser um fonte de gargalos de desempenho e de risco para o sistema em caso de falhas
 - Na prática os mediadores tendem a se tornarem mais complexos
+
+## Memento
+- Tem a intenção de capturar e externalizar um estado interno de um objeto, sem violar o encapsulamento, de modo que o mesmo possa posteriormente
+ser restaurado para esse estado
+- Ele permite salva e restaurar o estado de um objeto sem quebrar as regras de encapsulamento
+- Permite tirar um snapshot ou retrato do estado de um objeto e restaurá-lo posteriormente(serialização)
+### Exemplos de uso
+- O estado de um objeto precisa ser salvo e restaurado posteriormente(operaçÕes de desfazer(undo), rollback, recuperação de falhas, etc)
+- O estado de um objeto não pode ser expost diretamente usando uma interface sem expor a implementação
+- Precisa desacoplar a responsabilidade de uma classe de tomar conta de seus backups
+### Vantagens
+- Permite armazenar o estado dos objetos sem comprometer o encapsulamento
+- Fornece um mecanismo de recuperação em caso de falhas
+- Fornce uma maneira de manter o histórico do ciclo de vida de um objeto
+### Desvantagens
+- O processo de salvar o estado de um objeto e restaurá-lo mais tarde pode levar algum tempo, ou seja, pode ser prejudicial ao desempenho do sistema

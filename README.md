@@ -38,6 +38,6 @@ consulta.
 - [X] Memento
 - [X] Observer
 - [X] State
-- [ ] Strategy
+- [X] Strategy
 - [ ] Template Method
 - [ ] Visitor

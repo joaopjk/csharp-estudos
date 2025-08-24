@@ -357,3 +357,24 @@ chamando seus métodos
 - Aumento do número de classes
 - Reque que muito código seja escrito. Dependendo de quantos métodos de transição de estado diferentes são definidos e de quantos estados possíveis
 um objeto pode estar.
+
+## Strategy
+- Define uma família de algoritmos, encapsula cada um e os torna intercambiáveis
+- Permite que o algoritmo varie independentemente dos clientes que o utilizam
+- Encapsula um algoritmo em um objeto e fornece interfaces genéricas o suficiente para suportar uma variedade de algoritmos e facilitar a escolha
+e troca de algoritmos criados com uma mesma função
+### Exemplos de uso
+- Muitas classes relacionadas diferem apenas em seus comportamentos
+- Precisamos usar diferentes variantes de um algoritmo
+- Um algoritmo usa dados que os clientes não deveriam conhecer
+- Uma classe define muitos comportamentos e eles aparecem como várias instruções condicionais em suas operações
+- Você tem um método que é aplicado em diferentes situaçoes nas quais é exigido um comportamento específico
+### Vantagens
+- Facilita e simplifica os testes de unidade pois cada algoritmo tem sua classe e pode ser testado pela sua própria interface
+- Evita o uso de condicionais, tornando o código mais flexível e fácil de estender
+- É aderente aos princípios de alta coesão e baixo acoplamento
+- Orienta a programar para uma interface e usar a composição ao invés da herança
+### Desvantagens
+- Aumento do número de classes e objetos
+- A aplicação deve conhecer todas as estratégias para poder selecionar a estratégia certa para a situação certa
+- Em geral o aplicativo configura o Context com o objeto Strategy necessário. Assim, a aplicação precisar criar e manter dois objetos no lugar de um

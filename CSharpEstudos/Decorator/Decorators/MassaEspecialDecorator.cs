@@ -4,7 +4,7 @@
     {
         public override string Opcionais()
         {
-            var opcional =  base.Opcionais();
+            var opcional = base.Opcionais();
             opcional += "\r\n com Massa Especial";
             return opcional;
         }

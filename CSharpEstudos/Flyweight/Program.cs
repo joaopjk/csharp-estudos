@@ -1,6 +1,6 @@
 ﻿using Flyweight;
 
-for(var i = 0; i < 10; i++)
+for (var i = 0; i < 10; i++)
 {
     var soldado = (Soldado)PersonagemFactory.GetPersonagem("Soldado");
     soldado.Poder = GetRandomPoderSoldado();

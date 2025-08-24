@@ -11,7 +11,7 @@
 
         public void CarregarArquivo()
         {
-            Console.WriteLine("Arquivo de vídeo carregado...");    
+            Console.WriteLine("Arquivo de vídeo carregado...");
         }
 
         public abstract void DecodificarVideo();

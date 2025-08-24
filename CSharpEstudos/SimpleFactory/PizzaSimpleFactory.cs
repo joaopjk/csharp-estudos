@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace SimpleFactory
+﻿namespace SimpleFactory
 {
     internal class PizzaSimpleFactory
     {

@@ -1,6 +1,6 @@
 ﻿namespace Observer
 {
-    internal class ConcreteObserver: IObserver
+    internal class ConcreteObserver : IObserver
     {
         public string Usuario { get; set; }
 

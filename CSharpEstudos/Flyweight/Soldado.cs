@@ -13,7 +13,7 @@
 
         public Soldado(int poder)
         {
-            if(poder is >= 10 and <= 50)
+            if (poder is >= 10 and <= 50)
                 Poder = poder;
             else
                 throw new ArgumentException("Valor está fora do poder de um soltado");

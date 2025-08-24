@@ -2,7 +2,7 @@
 {
     internal class CretaHyundai : ISuv
     {
-        public string ExibirDetalhes() => 
+        public string ExibirDetalhes() =>
             "Creta Hyundai: Um SUV compacto com design elegante e tecnologia avançada.";
     }
 }

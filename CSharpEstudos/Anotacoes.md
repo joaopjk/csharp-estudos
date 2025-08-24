@@ -343,3 +343,17 @@ chamando seus métodos
 ### Desvantagens
 - Os assinantes(observers) podem ser notificados em uma ordem imprevisível
 - Pode ocorrer o problema de vazamento de memória devido ao registro explícito e ao cancelamento de registro dos observers
+
+## State
+- Permite que um objeto altere seu comportamento quando seu estado interno for alterado(Vai aparecer que o objeto mudou de classe)
+- Ele ajuda os objetos a mudar seu estado sem mudar a interface(usada para acessar o objeto) ou perder o estado atual
+- É criado um objeto que representa vários estados e um objeto de contexto cujo comportamento varia conforme o estado do objeto for alterado
+### Vantagens
+- Se beneficia da implementação do polimorfismo e também é mais fácil adicionar estados para oferecer suporte a comportamentos adicionais
+- Melhora a coesão, uma vez que comportamentos específicos de estado são agregagos às classes ConcreteState, que são colocados em um local no código
+- A própria classe, define qual o estado, não necessitando conhecer valores de atributos, mas apenas o seu comportamento
+- Reduz o código condicional, como instruções if/else ou switch/case por distribuir o comportamento
+### Desvantagens
+- Aumento do número de classes
+- Reque que muito código seja escrito. Dependendo de quantos métodos de transição de estado diferentes são definidos e de quantos estados possíveis
+um objeto pode estar.

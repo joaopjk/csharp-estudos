@@ -37,7 +37,7 @@ consulta.
 - [X] Mediator
 - [X] Memento
 - [X] Observer
-- [ ] State
+- [X] State
 - [ ] Strategy
 - [ ] Template Method
 - [ ] Visitor

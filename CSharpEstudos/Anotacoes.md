@@ -397,3 +397,21 @@ e troca de algoritmos criados com uma mesma função
 ## Desvantagens
 - Depurar e compreender a sequência de fluxo as vezes pode ser confuso
 - A manutenção pode ser um problema, pois alteraçÕes em qualquer nível podem atrapalhar a implementação
+
+## Visitor
+- Representa uma operação a ser realizada sobre os elementos da estrutura de um objeto
+- Permite que se crie uma nova operação sem que se mude a classe dos elementos sobre os quais opera
+- Separa os comportamentos não relacionados do objeto e os coloca em um objeto separado, criando um objeto para cada nova funcionalidade
+## Exemplos de uso
+- Quando uma estrutura de objeto tem muitas operações não relacionadas para ser executada
+- Quando a estrutura de um objeto não pode ser alterada, mais você precisa adicionar novas operações
+- As operaçÕes precisam ser executadas nas classes concretas de uma estrutura de objeto
+- Quando as operaçÕes devem ser capazes de operar em múltiplas estruturas de objetos que implementam a mesma interface
+## Vantagens
+- Adicionar uma nova ação a todos os objetos do Element de uma estrutura é fácil, pois voce só precisa implementar a interface Visitor. Não há 
+necessidade de modificar todos os objetos Element para adicionar uma nova operação
+- Permite reagrupar ações comuns a muitos objetos Element em uma única nova classe Visitor. Apenas o código para essa ação está nessa classe Visitor
+## Desvantagens
+- O código dos objetos Element estão espalhados em todos os objetos Visitor. Portante, a lógica do objeto Elemente vive em muitas classes. Isso torna
+o código mas difícil de ler se você quiser examinar o código de um objeto Element específico
+- É necessário uma nova classe Visitor para cada ação

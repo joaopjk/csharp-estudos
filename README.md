@@ -40,4 +40,4 @@ consulta.
 - [X] State
 - [X] Strategy
 - [X] Template Method
-- [ ] Visitor
+- [X] Visitor

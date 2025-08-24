@@ -39,5 +39,5 @@ consulta.
 - [X] Observer
 - [X] State
 - [X] Strategy
-- [ ] Template Method
+- [X] Template Method
 - [ ] Visitor

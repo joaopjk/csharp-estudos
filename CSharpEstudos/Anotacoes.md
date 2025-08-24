@@ -378,3 +378,22 @@ e troca de algoritmos criados com uma mesma função
 - Aumento do número de classes e objetos
 - A aplicação deve conhecer todas as estratégias para poder selecionar a estratégia certa para a situação certa
 - Em geral o aplicativo configura o Context com o objeto Strategy necessário. Assim, a aplicação precisar criar e manter dois objetos no lugar de um
+
+## Template Method
+- Define o esqueleto de um algoritmo em uma operação na classe base, adiando algumas etapas para as subclasses
+- Permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrtura do algoritmo
+- A chave para este padrão é colocar a lógica geral na classe pai abstrata e deixas as filhas definirem as especificidades
+- Permite definir a estrutura do algoritmo em uma classe base e sobrescrever procedimos es específicos nas classes derivadas
+## Exemplos de uso
+- Quando temos um grupo de algoritmos que consistem dos mesmos passos
+- Quando temos algoritmos que diferem somente na implementação de alguns passos
+- Quando queremos trocar de forma transparente algoritmos sem ter que alterar o código do cliente
+- Quando queremos evitar a duplicação de código na estrutura geral do fluxo de trabalho
+## Vantagens
+- Fácil de implementar e entender
+- Flexível pois deixa as subclasses decidir como implementar os passos do algoritmo
+- Fornece uma forma compacta de implementar um grupo de algoritmos relacionados
+- Fornece uma interface genérica para o algoritmo que mascara a implementação
+## Desvantagens
+- Depurar e compreender a sequência de fluxo as vezes pode ser confuso
+- A manutenção pode ser um problema, pois alteraçÕes em qualquer nível podem atrapalhar a implementação

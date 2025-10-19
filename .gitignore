@@ -620,3 +620,12 @@ _UpgradeReport_Files/
 Thumbs.db
 Desktop.ini
 .DS_Store
+/.idea/.gitignore
+/AI/.idea/.gitignore
+/AI/.idea/copilot.data.migration.agent.xml
+/AI/.idea/copilot.data.migration.ask.xml
+/AI/.idea/copilot.data.migration.ask2agent.xml
+/AI/.idea/copilot.data.migration.edit.xml
+/.idea/encodings.xml
+/.idea/indexLayout.xml
+/.idea/vcs.xml

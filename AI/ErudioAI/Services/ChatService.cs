@@ -1,4 +1,5 @@
 ﻿using OpenAI;
+using OpenAI.Chat;
 
 namespace ErudioAI.Services;
 
@@ -11,6 +12,24 @@ public class ChatService(
     {
         var chatClient = openAiClient.GetChatClient(_model);
         var response = await chatClient.CompleteChatAsync(prompt);
+
+        return response.Value.Content[^1].Text ?? "No response for AI";
+    }
+
+    public async Task<string> GetResponseWithOptions(string prompt)
+    {
+        var chatClient = openAiClient.GetChatClient(_model);
+        var messages = new List<ChatMessage>
+        {
+            new UserChatMessage(prompt)
+        };
+        var options = new ChatCompletionOptions
+        {
+            Temperature = 0.4f,
+            MaxOutputTokenCount = 200
+        };
+
+        var response = await chatClient.CompleteChatAsync(messages, options);
 
         return response.Value.Content[^1].Text ?? "No response for AI";
     }

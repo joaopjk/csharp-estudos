@@ -14,4 +14,13 @@ public class GenerativeAiController(ChatService service) : ControllerBase
 
         return Ok(await service.GetResponse(prompt));
     }
+    
+    [HttpGet("ask-ai-options")]
+    public async Task<IActionResult> AskAiWithOptions([FromQuery] string prompt)
+    {
+        if (string.IsNullOrEmpty(prompt))
+            return BadRequest("Prompt cannot be empty");
+
+        return Ok(await service.GetResponseWithOptions(prompt));
+    }
 }

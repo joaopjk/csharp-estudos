@@ -23,6 +23,7 @@ public class ChatService(
         {
             new UserChatMessage(prompt)
         };
+        
         var options = new ChatCompletionOptions
         {
             Temperature = 0.4f,

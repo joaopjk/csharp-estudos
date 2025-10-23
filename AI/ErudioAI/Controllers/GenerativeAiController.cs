@@ -6,7 +6,8 @@ namespace ErudioAI.Controllers;
 [ApiController]
 public class GenerativeAiController(
     ChatService chatService,
-    RecipeService recipeService) : ControllerBase
+    RecipeService recipeService,
+    ImageService imageService) : ControllerBase
 {
     [HttpGet("ask-ai")]
     public async Task<IActionResult> AskAi([FromQuery] string prompt)
@@ -36,5 +37,19 @@ public class GenerativeAiController(
             return BadRequest("Ingredients cannot be empty");
 
         return Ok(await recipeService.GetRecipe(ingredients, cuisine, dietRestrictions));
+    }
+
+    [HttpGet("image-creator")]
+    public async Task<IActionResult> GenerateImage(
+        [FromQuery] string prompt,
+        [FromQuery] string quality,
+        [FromQuery] int numberOfImages,
+        [FromQuery] int height,
+        [FromQuery] int width)
+    {
+        if (string.IsNullOrEmpty(prompt))
+            return BadRequest("prompt cannot be empty");
+
+        return Ok(await imageService.GenerateImage(prompt, quality, numberOfImages, height, width));
     }
 }

@@ -7,7 +7,8 @@ namespace ErudioAI.Controllers;
 public class GenerativeAiController(
     ChatService chatService,
     RecipeService recipeService,
-    ImageService imageService) : ControllerBase
+    ImageService imageService,
+    AudioService audioService) : ControllerBase
 {
     [HttpGet("ask-ai")]
     public async Task<IActionResult> AskAi([FromQuery] string prompt)
@@ -51,5 +52,15 @@ public class GenerativeAiController(
             return BadRequest("prompt cannot be empty");
 
         return Ok(await imageService.GenerateImage(prompt, quality, numberOfImages, height, width));
+    }
+
+    [HttpPost("audio-transcription")]
+    public async Task<IActionResult> GenerateTranscribeAudio(
+        IFormFile? formFile)
+    {
+        if (formFile == null)
+            return BadRequest("prompt cannot be empty");
+
+        return Ok(await audioService.TranscribeAudioAsync(formFile));
     }
 }

@@ -35,6 +35,7 @@ builder.Services.AddOpenApi(opt =>
 builder.Services.AddSingleton<ChatService>();
 builder.Services.AddSingleton<RecipeService>();
 builder.Services.AddSingleton<ImageService>();
+builder.Services.AddSingleton<AudioService>();
 builder.Services.AddCors(opt => opt.AddDefaultPolicy(corsPolicyBuilder => corsPolicyBuilder
     .AllowAnyOrigin()
     .AllowAnyHeader()
@@ -55,7 +56,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

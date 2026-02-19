@@ -5,11 +5,11 @@ São padrões de design que lidam com mecanismos de criação de objetos
 - *Flexibilidade*: Facilitam a adição de novos tipos de objetos
 - *Desacoplamento*: Reduzem a dependência entre classes e permitem isolar mudanças
 - *Manutenção e testabilidade*: A criação dos objetos está centralizada, facilitando a manutenção e o desenvolvimento de testes
-- *Consistência*: Os objetos são criados da mesma forma em todo o sistema, promovendo, por exemplo, standardização entre a equipe de desenvolvimento
+- *Consistência*: Os objetos são criados da mesma forma em todo o sistema, promovendo, por exemplo, padronização entre a equipe de desenvolvimento
 - *Eficiência*: Padrões como o Singleton podem ajudar a otimizar recursos e reduzir potenciais bugs
 
 ## Factory Method
-- Factory é um objeto que é usado para criar outros objetos
+- Factory é um objeto usado para criar outros objetos
 - No padrão Factory, criamos um objeto sem expor a lógica de criação ao cliente e referimos ao objeto recém-criado usando uma interface comum
 - Tipos de Factory:
     - Simple Factory: mais usado, porém não está no catálogo GoF
@@ -23,7 +23,7 @@ São padrões de design que lidam com mecanismos de criação de objetos
 ## Factory Method
 - Define uma interface para criar um objeto, mas permite que as subclasses decidam qual classe instanciar
 - O Factory Method permite que uma classe adie a instanciação que ela usa para as subclasses
-- O padrão usa herença e depdente de uma subclasse para lidar com a instanciação do objeto desejado
+- O padrão usa herança e dependente de uma subclasse para lidar com a instanciação do objeto desejado
 - Usado para criar objetos sem expor a lógica de criação ao cliente
 
 ## Abstract Factory
@@ -40,7 +40,7 @@ São padrões de design que lidam com mecanismos de criação de objetos
 ## Fluent Builder
 - Fluent builder é um estilo de codificação que força o desenvolvedor a criar o objeto em sequência, chamando cada método setter, um após o outro, até
   que todos os atributos necessários sejam configurados
-- Este padrãp fornece uma interface fluída o que torna o código muito mais fácil de ler
+- Este padrão fornece uma interface fluída o que torna o código muito mais fácil de ler
 - A Fluent interface é uma API orientada a objetos cujo design se baseia no encadeamento de métodos cujo objetivo é aumentar a legibilidade do código
   criando uma linguagem específica do domínio
 - LINQ é um tipo de programação fluente
@@ -52,10 +52,10 @@ São padrões de design que lidam com mecanismos de criação de objetos
 - Oferece uma maneira de criar novos objetos a partir da instância existente do objeto
 - Evita criar um novo objeto utilizando a palavra-chave new, o que diminui o custo de memória
 - Evita que as subclasses que criam objetos funcionem como o padrão abstract factory
-- É útil quando a inicialização do objeto é cara e possui parâmetros de inicialização. Nesse contexto, o prototype pode evitar a criação do zedo que é
+- É útil quando a inicialização do objeto é cara e possui parâmetros de inicialização. Nesse contexto, o prototype pode evitar a criação do zero que é
   custosa e suportar clonagem barata de um protótipo pré-criado
 - É o único entre os outros padrões de criação, pois não requer uma classe apenas um objeto
-- Não requer o uso de subclases mais precisa de uma inicialização
+- Não requer o uso de subclasses mais precisa de uma inicialização
 - A clonagem de objetos complexos que contenham referências circulares pode ser problemática
 
 ## Singleton
@@ -71,10 +71,10 @@ facilitam o design ao identificar maneiras simples de realizar relacionamentos e
 do código.
 
 ## Adapter
-- Adapta uma interface em outra de acordo com a expectativa do cliente
+- Adapta uma interface em outra conforme a expectativa do cliente
 - Permite a colaboração de objetos com interfaces incompatíveis
 - Conhecido como Invólucro (Wrapper)
-- Converte a interface de uma clsse em outra
+- Converte a interface de uma classe em outra
 - Envolver (Wrap) uma classe existente com uma nova interface
 - Introduzir um componente legado em um novo sistema
 - *Adaptador de Objeto*: Essa implementação usa o princípio de composição de objetos. O adaptador implemente a interface de um objeto e encobre o outro
@@ -107,7 +107,7 @@ do código.
 - Aumenta a complexidade do código, pois introduz mais classes e interfaces
 
 ## Composite
-- Compõe objetos em estrtuturas semelhantes a uma árvore para representar hierarquias parte-todo
+- Compõe objetos em estruturas semelhantes a uma árvore para representar hierarquias parte-todo
 - Permite que os clientes tratem objetos individuais(leafs) e composições de objetos(composites) de maneira uniforme(como um único objeto)
 - Recursividade
 ### Estrutura
@@ -120,22 +120,22 @@ do código.
 - Queremos que os clientes ignorem a diferença entre composições de objetos e objetos individuais
 ### Vantagens
 - Ajuda a alcançar a uniformidade(uso de funções semelhantes) em toda a hierarquia de objetos que contém tipos de objetos primitivos e compostos
-- Torna mais fácil para o cliente atingir a funcionalidade desejada sem se procupar com o tipo de objeto com o qual está lidando
+- Torna mais fácil para o cliente atingir a funcionalidade desejada sem se preocupar com o tipo de objeto com o qual está lidando
 ### Desvantagens
-- Pode se tornar muit genérico devido à sua uniformidade, tornando difícil restringir objetos que podem ser incluídos no grupo composto
+- Pode se tornar muito genérico devido à sua uniformidade, dificultando restringir objetos que podem ser incluídos no grupo composto
 
 ## Decorator
-- Atribui responsabilidades adicionais a um objeto de forma dinânica sem afetar o comportamento de outros objetos da mesma classe
-- Fornece uma alteranativa flexível à herança para estender uma funcionalidade
+- Atribui responsabilidades adicionais a um objeto de forma dinâmica sem afetar o comportamento de outros objetos da mesma classe
+- Fornece uma alternativa flexível à herança para estender uma funcionalidade
 - Permite estender(decorar) de forma dinâmica as características(propriedades e comportamentos) de uma classe qualquer
 ### Exemplos de uso
 - Quando houver necessidade de anexar ou remover o comportamento de apenas algumas instâncias de uma classe, em vez de todas as instâncias da classe
-- Quando a estensão através da herença não for possível
-- Quando temos uma classe que não pode ser herdada por estarmos herdando de uma outra classe qualquer(herança simples)
+- Quando a extensão através da herança não for possível
+- Quando temos uma classe que não pode ser herdada por estarmos herdando outra classe qualquer(herança simples)
 - Queremos adicionar responsabilidades a objetos individuais de forma dinâmica e transparente, sem afetar outros objetos
 - Quando não podemos usar herança(sealed)
 ### Vantagens
-- É mais flexível que a herança pois adiciona responsabilidades em tempo de execução e não em tempo de compilação
+- É mais flexível que a herança, pois adiciona responsabilidades em tempo de execução e não em tempo de compilação
 - Podemos ter qualquer número de decoradores e em qualquer ordem
 - Estende a funcionalidade do objeto sem afetar outros objetos
 ### Desvantagens
@@ -146,7 +146,7 @@ do código.
 - Define uma interface de nível superior que torna o subsistema mais fácil de usar
 - Fica no topo de um grupo de subsistemas e permite que eles se comuniquem de uma maneira unificada
 ### Exemplos de uso
-- Quando queremos simplificar um sequência de operações complexas
+- Quando queremos simplificar uma sequência de operações complexas
 - Quando queremos simplificar a interface com o usuário
 - Quando queremos fornecer uma interface única e uniforme para diversas funcionalidades de um subsistema
 - Quando queremos criar sistemas em camadas. Um facade provê o ponto de entrada para cada camada do subsistema
@@ -159,9 +159,9 @@ do código.
 - Cria uma dependência entre vários subsistemas, pois vários métodos são chamados a partir deles para servir o cliente
 
 ## Flyweight
-- Usado para criar um grande número de objetos relacionados sem invocar muito trabalho de sobrecarga ao fazer isso, otimizando o consumo de memória e
-  melhorando a performance
-- Ele consegui isso compartilhando partes do estado do objeto entre vários objetos, assim, ele economiza mémoria armazenando em cache os mesmos dados
+- Usado para criar inúmeros objetos relacionados sem invocar muito trabalho de sobrecarga ao fazer isso, otimizando o consumo de memória e
+  melhorando a desempenho
+- Ele consegue isso compartilhando partes do estado do objeto entre vários objetos, assim, ele economiza mémoria armazenando em cache os mesmos dados
   usados por objetos diferentes
 - Cada objeto é chamado de Flyweight e é composto por dois tipos de estados:
     - Estado Intrínseco: É o estado compartilhado entre os objetos Flyweight. Ele é imutável e não pode ser alterado
@@ -176,16 +176,16 @@ do código.
 - Favorece o Cache de dados permitindo um maior tempo de resposta
 - Aumenta o desempenho reduzindo o número de objetos pesados na memória
 ### Desvantagens
-- O objetos flyweights podem introduzir custos de tempo de execução associados à transferência, localização e/ou computação do estado extrínseco,
+- O objeto flyweights podem introduzir custos de tempo de execução associados à transferência, localização e/ou computação do estado extrínseco,
   especialmente se ele foi anteriormente armazenado como estado intrínseco
-- A aplicação do padrão possui escopo reduzido e de acordo com o GoF 5 condições devem ser atendidas:
+- A aplicação do padrão possui escopo reduzido e conforme o GoF 5 condições devem ser atendidas:
     - O número de objetos que serão criados é grande
     - O custo de criação de um objeto é alto
     - A maioria dos estados dos objetos Flyweight são compartilhados
     - O estado extrínseco pode ser calculado ou armazenado em cache
 
 ## Proxy
-- Fornece um objeto que atua como um substituto para um objeto de serviço real que é usado por um cliente para controlar o acesso a este objeto
+- Fornece um objeto que atua como um substituto para um objeto de serviço real usado por um cliente para controlar o acesso a este objeto
 - Permite encapsular a instância de uma classe complexa usando uma instância de outra classe que possui a mesma interface
 - Um proxy é um objeto wrapper(empacotador) que está sendo chamando pelo cliente para acessar o objeto de serviço real, nos bastidores
 - Proxy significa 'no lugar de' ou 'em nome de'(procurador)
@@ -217,12 +217,12 @@ comportamento dos objetos.
 
 ## Chain of Responsibility
 - Evita acoplar o remetente de uma solicitação a seu receptor, dando a mais de um objeto a chance de lidar com a solicitação
-- Encadeia os objetos receptores e passa a solicitação ao longo da cadeia ate que um objeto a trate
+- Encadeia os objetos receptores e passa a solicitação ao longo da cadeia até que um objeto a trate
 - Simplifica as interconexões de objetos
-- Evita a dependência entre um objeto recepetor e um objeto solicitante ou destinatário
+- Evita a dependência entre um objeto receptor e um objeto solicitante ou destinatário
 ### Exemplos de uso
 - Quando tivermos mais de um manipulador para uma solicitação
-- Quando tivermos motivos pelos quais um gerenciador deve passar uma solitação para outra na cadeia
+- Quando tivermos motivos pelos quais um gerenciador deve passar uma solicitação para outra na cadeia
 - Quando tivermos um conjunto de manipuladores que variam de forma dinâmica
 - Quando desejarmos manter a flexibilidade na atribuição de solicitações e manipuladores
 - Quando tivermos uma cadeia muito lógica de manipuladores que devem ser executados em ordem repetidas vezes
@@ -242,7 +242,7 @@ comportamento dos objetos.
 - Especificar, enfileirar e executar solicitações em tempos diferentes
 - Dar suporte para desfazer operações
 - Estruturar um sistema em torno de operações de alto nível(transações)
-- Reduzir acoplamento entre as requisiçÕes dos clientes e os objetos que as executam
+- Reduzir acoplamento entre as requisições dos clientes e os objetos que as executam
 - Facilitar a implementação de novas operações e tornar mais simples a manutenção das operações
 ### Vantagens
 - Desacopla o objeto que invoca a operação daquele que sabe como executá-la
@@ -250,10 +250,10 @@ comportamento dos objetos.
 - Os comandos são objetos de primeira classe, ou seja, podem ser manipulados e estendidos como qualquer outro objeto
 - Um comando pode ser composto por outros commandos e é fácil acrescentar novos comandos(sem mudar classes existentes)
 ### Desvantagens
-- O códgo pode se tornar complexo com o aumento no número de classes criadas para cada comando, dos métodos Action e das muitas associações
+- O código pode se tornar complexo com o aumento no número de classes criadas para cada comando, dos métodos Action e das muitas associações
 
 ## Interpreter
-- Dada uma linguagem, o padrão define uma representação para sua gramática junto com um intérprete que usa a representação para interpretar frases
+- Dada uma linguagem, o padrão define uma representação para sua gramática com um intérprete que usa a representação para interpretar frases
   na linguagem
 - Usado para avaliar e interpretar as instruções escritas em uma gramática de linguagem ou notações. Ele envolve a implementação de uma interface de
   expressão que diz para interpretar um contexto específico
@@ -267,7 +267,7 @@ comportamento dos objetos.
 ### Vantagens
 - É fácil mudar e estender a gramática. Como o padrão usa classes para representar regras gramaticais, você pode usar herança para alterar ou estender
   a gramática. As expressões existentes podem ser modificadas de forma incremental e as novas expressões podem ser definidas como variações das antigas
-- Implementar a gramática também é fácil. As classes que definme nós na ávores de sintaxe abstrata tem implementações semelhantes. Essas classes são
+- Implementar a gramática também é fácil. As classes que define nós nas árvores de sintaxe abstrata tem implementações semelhantes. Essas classes são
   fáceis de escrever e, muitas vezes, sua geração pode ser automatizada com um compilador ou gerador de analisador
 ### Desvantagens
 - Gramáticas complexas são difíceis de manter. O padrão define pelo menos uma classe para cada regra da gramática. Desta forma, gramáticas contendo
@@ -276,7 +276,7 @@ comportamento dos objetos.
 ## Iterator
 - Fornece uma maneira de acessar os elementos de um objeto agregado(coleção) sequencialmente sem expor sua representação subjacente
 - Permite o acesso sequencia a elementos de uma coleção sem expor a lógica interna
-- A ideia principal deste padrão é extrair o comportamento transversal de uma coleção para um objeto seperado chamado de Iterador
+- A ideia principal deste padrão é extrair o comportamento transversal de uma coleção para um objeto separado chamado de Iterador
 ### Exemplos de uso
 - Quando sua coleção tiver uma estrutura de dados complexa e você deseja ocultar sua complexidade dos clientes
 - Para reduzir a duplicação do código usada para percorrer coleções no seu aplicativo
@@ -293,10 +293,10 @@ comportamento dos objetos.
 
 ## Mediator
 - Define um objeto que encapsula como um conjunto de objetos interage
-- Promove o acoplamento fraco evitando que os objetos se refiram explicitamente uns aos outros e permite que você varie sua interação de forma
+- Promove o acoplamento fraco evitando que os objetos se refiram explicitamente mutualmente e permite que você varie sua interação de forma
   independente
-- Permite que um grupo de objetos se comuniquem entre si sem que haja acoplamento entre eles através de um objeto mediador
-- A itenção do padrão é definir um objeto que encapsula como um conjunto de objetos interagem
+- Permite que um grupo de objetos se comuniquem entre si sem que haja acoplamento entre eles por um objeto mediador
+- A intenção do padrão é definir um objeto que encapsula como um conjunto de objetos interagem
 ### Vantagens
 - Desacoplamento entre os objetos, pois nenhum objeto se conhece na comunicação
 - O fluxo de comunicação está centralizado, com isso, alterações no mediador não afetam seus ouvintes
@@ -304,7 +304,7 @@ comportamento dos objetos.
 - Eliminação de relacionamentos muitos para muitos(substituídos por relacionamentos um para muitos)
 ### Desvantagens
 - A centralização pode ser um fonte de gargalos de desempenho e de risco para o sistema em caso de falhas
-- Na prática os mediadores tendem a se tornarem mais complexos
+- Na prática, os mediadores tendem a se tornarem mais complexos
 
 ## Memento
 - Tem a intenção de capturar e externalizar um estado interno de um objeto, sem violar o encapsulamento, de modo que o mesmo possa posteriormente
@@ -312,13 +312,13 @@ comportamento dos objetos.
 - Ele permite salva e restaurar o estado de um objeto sem quebrar as regras de encapsulamento
 - Permite tirar um snapshot ou retrato do estado de um objeto e restaurá-lo posteriormente(serialização)
 ### Exemplos de uso
-- O estado de um objeto precisa ser salvo e restaurado posteriormente(operaçÕes de desfazer(undo), rollback, recuperação de falhas, etc)
-- O estado de um objeto não pode ser expost diretamente usando uma interface sem expor a implementação
+- O estado de um objeto precisa ser salvo e restaurado posteriormente(operações de desfazer(undo), rollback, recuperação de falhas, etc)
+- O estado de um objeto não pode ser exposta diretamente usando uma interface sem expor a implementação
 - Precisa desacoplar a responsabilidade de uma classe de tomar conta de seus backups
 ### Vantagens
 - Permite armazenar o estado dos objetos sem comprometer o encapsulamento
 - Fornece um mecanismo de recuperação em caso de falhas
-- Fornce uma maneira de manter o histórico do ciclo de vida de um objeto
+- Fornece uma maneira de manter o histórico do ciclo de vida de um objeto
 ### Desvantagens
 - O processo de salvar o estado de um objeto e restaurá-lo mais tarde pode levar algum tempo, ou seja, pode ser prejudicial ao desempenho do sistema
 
@@ -329,11 +329,11 @@ comportamento dos objetos.
 - Temos os objeto(subject) que mantém uma lista de seus dependentes(observers) e os notifica automaticamente sobre qualquer mudança de estado,
   chamando seus métodos
 - *Subject*: São os objetos publicadores. Quando ocorre alguma mudança de estado de um subject ele deve notificar todos os seus assinantes
-- *Observers*: Eles são os assinantes. Eles simplismente recebem notificaçÕes sobre as mudanças de estado dos subjects
+- *Observers*: Eles são os assinantes. Eles simplesmente recebem notificações sobre as mudanças de estado dos subjects
 ### Exemplos de uso
 - Quando uma modificação do estado de um objeto implica modificações em outros objetos
 - Quando um objeto deve ser capaz de notificar outros objetos, mas sem pressupostos sobre os objetos a serem notificados
-- Quando uma abstração possuir dois apectos e um depender do outro
+- Quando uma abstração possuir dois aspectos e um depender do outro
 - Quando não desejamos um forte acoplamento com os objetos que necessitam conhecer estas modificações
 ### Vantagens
 - Permite um acoplamento mínimo entre o Subject e os Observers
@@ -350,7 +350,7 @@ comportamento dos objetos.
 - É criado um objeto que representa vários estados e um objeto de contexto cujo comportamento varia conforme o estado do objeto for alterado
 ### Vantagens
 - Se beneficia da implementação do polimorfismo e também é mais fácil adicionar estados para oferecer suporte a comportamentos adicionais
-- Melhora a coesão, uma vez que comportamentos específicos de estado são agregagos às classes ConcreteState, que são colocados em um local no código
+- Melhora a coesão, uma vez que comportamentos específicos de estado são agregados às classes ConcreteState, colocados em um local no código
 - A própria classe, define qual o estado, não necessitando conhecer valores de atributos, mas apenas o seu comportamento
 - Reduz o código condicional, como instruções if/else ou switch/case por distribuir o comportamento
 ### Desvantagens
@@ -368,35 +368,35 @@ comportamento dos objetos.
 - Precisamos usar diferentes variantes de um algoritmo
 - Um algoritmo usa dados que os clientes não deveriam conhecer
 - Uma classe define muitos comportamentos e eles aparecem como várias instruções condicionais em suas operações
-- Você tem um método que é aplicado em diferentes situaçoes nas quais é exigido um comportamento específico
+- Você tem um método aplicado em diferentes situaçoes nas quais é exigido um comportamento específico
 ### Vantagens
-- Facilita e simplifica os testes de unidade pois cada algoritmo tem sua classe e pode ser testado pela sua própria interface
+- Facilita e simplifica os testes de unidade, pois cada algoritmo tem sua classe e pode ser testado pela sua própria interface
 - Evita o uso de condicionais, tornando o código mais flexível e fácil de estender
 - É aderente aos princípios de alta coesão e baixo acoplamento
 - Orienta a programar para uma interface e usar a composição ao invés da herança
 ### Desvantagens
 - Aumento do número de classes e objetos
 - A aplicação deve conhecer todas as estratégias para poder selecionar a estratégia certa para a situação certa
-- Em geral o aplicativo configura o Context com o objeto Strategy necessário. Assim, a aplicação precisar criar e manter dois objetos no lugar de um
+- Em geral, o aplicativo configura o Context com o objeto Strategy necessário. Assim, a aplicação precisar criar e manter dois objetos no lugar de um
 
 ## Template Method
 - Define o esqueleto de um algoritmo em uma operação na classe base, adiando algumas etapas para as subclasses
-- Permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrtura do algoritmo
+- Permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrutura do algoritmo
 - A chave para este padrão é colocar a lógica geral na classe pai abstrata e deixas as filhas definirem as especificidades
-- Permite definir a estrutura do algoritmo em uma classe base e sobrescrever procedimos es específicos nas classes derivadas
+- Permite definir a estrutura do algoritmo em uma classe base e sobrescrever procedemos es específicos nas classes derivadas
 ## Exemplos de uso
 - Quando temos um grupo de algoritmos que consistem dos mesmos passos
 - Quando temos algoritmos que diferem somente na implementação de alguns passos
 - Quando queremos trocar de forma transparente algoritmos sem ter que alterar o código do cliente
-- Quando queremos evitar a duplicação de código na estrutura geral do fluxo de trabalho
+- Quando queremos evitar a duplicação de código na estrutura do fluxo de trabalho
 ## Vantagens
 - Fácil de implementar e entender
-- Flexível pois deixa as subclasses decidir como implementar os passos do algoritmo
+- Flexível, pois deixa as subclasses decidirem como implementar os passos do algoritmo
 - Fornece uma forma compacta de implementar um grupo de algoritmos relacionados
 - Fornece uma interface genérica para o algoritmo que mascara a implementação
 ## Desvantagens
-- Depurar e compreender a sequência de fluxo as vezes pode ser confuso
-- A manutenção pode ser um problema, pois alteraçÕes em qualquer nível podem atrapalhar a implementação
+- Depurar e compreender a sequência de fluxo às vezes pode ser confuso
+- A manutenção pode ser um problema, pois alterações em qualquer nível podem atrapalhar a implementação
 
 ## Visitor
 - Representa uma operação a ser realizada sobre os elementos da estrutura de um objeto
@@ -405,13 +405,13 @@ comportamento dos objetos.
 ## Exemplos de uso
 - Quando uma estrutura de objeto tem muitas operações não relacionadas para ser executada
 - Quando a estrutura de um objeto não pode ser alterada, mais você precisa adicionar novas operações
-- As operaçÕes precisam ser executadas nas classes concretas de uma estrutura de objeto
-- Quando as operaçÕes devem ser capazes de operar em múltiplas estruturas de objetos que implementam a mesma interface
+- As operações precisam ser executadas nas classes concretas de uma estrutura de objeto
+- Quando as operações devem ser capazes de operar em múltiplas estruturas de objetos que implementam a mesma interface
 ## Vantagens
-- Adicionar uma nova ação a todos os objetos do Element de uma estrutura é fácil, pois voce só precisa implementar a interface Visitor. Não há
+- Adicionar uma nova ação a todos os objetos do Element de uma estrutura é fácil, pois você só precisa implementar a interface Visitor. Não há
   necessidade de modificar todos os objetos Element para adicionar uma nova operação
 - Permite reagrupar ações comuns a muitos objetos Element em uma única nova classe Visitor. Apenas o código para essa ação está nessa classe Visitor
 ## Desvantagens
-- O código dos objetos Element estão espalhados em todos os objetos Visitor. Portante, a lógica do objeto Elemente vive em muitas classes. Isso torna
-  o código mas difícil de ler se você quiser examinar o código de um objeto Element específico
-- É necessário uma nova classe Visitor para cada ação
+- O código dos objetos Element estão espalhados em todos os objetos Visitor. Portante, a lógica do objeto Element vive em muitas classes. Isso torna
+  o código, mas difícil de ler se você quiser examinar o código de um objeto Element específico
+- É necessária uma nova classe Visitor para cada ação

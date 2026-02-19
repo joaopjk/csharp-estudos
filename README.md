@@ -14,7 +14,7 @@ consulta.
 
 ---
 
-## 📚 Padrões de Projeto
+## 📚 [Padrões de Projeto](./Documentos/DesignPatterns.md)
 ### Criacionais
 - [X] Factory Method
 - [X] Abstract Method

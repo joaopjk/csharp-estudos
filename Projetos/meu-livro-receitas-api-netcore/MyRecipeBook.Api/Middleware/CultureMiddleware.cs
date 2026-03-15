@@ -20,9 +20,9 @@ public class CultureMiddleware(RequestDelegate next)
             CultureInfo.CurrentCulture = cultureInfo;
             CultureInfo.CurrentUICulture = cultureInfo;
         }
-        catch (Exception e)
+        catch (Exception)
         {
-            Console.WriteLine(e);
+            // ignored
         }
 
         await next(context);

@@ -4,18 +4,27 @@ namespace MyRecipeBook.Api.Middleware;
 
 public class CultureMiddleware(RequestDelegate next)
 {
+    private static readonly CultureInfo[] SupportedCulture = CultureInfo.GetCultures(CultureTypes.AllCultures);
+
     public async Task Invoke(HttpContext context)
     {
-        // var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
-        //
-        // if (requestedCulture != null)
-        // {
-        //     var culture = new CultureInfo(requestedCulture);
-        //
-        //     CultureInfo.CurrentCulture = culture;
-        //     CultureInfo.CurrentUICulture = culture;
-        // }
-        
+        try
+        {
+            var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
+            var cultureInfo = new CultureInfo("en");
+
+            if (!string.IsNullOrEmpty(requestedCulture) &&
+                SupportedCulture.Any(c => c.Name == requestedCulture))
+                cultureInfo = new CultureInfo(requestedCulture);
+
+            CultureInfo.CurrentCulture = cultureInfo;
+            CultureInfo.CurrentUICulture = cultureInfo;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+
         await next(context);
     }
 }

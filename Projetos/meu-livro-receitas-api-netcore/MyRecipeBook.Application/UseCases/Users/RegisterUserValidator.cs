@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using MyRecipeBook.Communication.Requests;
 
-namespace MyRecipeBook.Application.UseCases.User;
+namespace MyRecipeBook.Application.UseCases.Users;
 
 public class RegisterUserValidator : AbstractValidator<RequestRegisterUser>
 {

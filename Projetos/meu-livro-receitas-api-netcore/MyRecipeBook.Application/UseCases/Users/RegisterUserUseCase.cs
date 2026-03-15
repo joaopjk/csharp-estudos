@@ -1,14 +1,23 @@
-﻿using MyRecipeBook.Communication.Requests;
+﻿using AutoMapper;
+using MyRecipeBook.Application.Services;
+using MyRecipeBook.Communication.Requests;
 using MyRecipeBook.Communication.Responses;
+using MyRecipeBook.Domain.Entities;
 using MyRecipeBook.Exceptions.Base;
 
-namespace MyRecipeBook.Application.UseCases.User;
+namespace MyRecipeBook.Application.UseCases.Users;
 
-public class RegisterUserUseCase
+public class RegisterUserUseCase (
+    PasswordEncripter passwordEncripter,
+    IMapper mapper)
 {
     public ResponseRegisteredUser Execute(RequestRegisterUser request)
     {
         Validate(request);
+        
+        var user = mapper.Map<User>(request);
+        user.Password = passwordEncripter.Encript(request.Password);
+        
         return new ResponseRegisteredUser();
     }
 

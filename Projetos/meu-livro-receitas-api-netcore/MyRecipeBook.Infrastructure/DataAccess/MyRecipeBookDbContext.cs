@@ -7,6 +7,9 @@ public class MyRecipeBookDbContext(DbContextOptions<MyRecipeBookDbContext> optio
 {
     public DbSet<User> Users { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder) =>
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(MyRecipeBookDbContext).Assembly);
+        modelBuilder.HasDefaultSchema("myrecipebook");
+    }
 }

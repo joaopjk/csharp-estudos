@@ -3,21 +3,25 @@ using MyRecipeBook.Application.Services;
 using MyRecipeBook.Communication.Requests;
 using MyRecipeBook.Communication.Responses;
 using MyRecipeBook.Domain.Entities;
+using MyRecipeBook.Domain.Interfaces.Repositories;
+using MyRecipeBook.Domain.Interfaces.UseCases;
 using MyRecipeBook.Exceptions.Base;
 
 namespace MyRecipeBook.Application.UseCases.Users;
 
-public class RegisterUserUseCase (
+public class RegisterUserUseCase(
+    IUserRepository userRepository,
     PasswordEncripter passwordEncripter,
-    IMapper mapper)
+    IMapper mapper) : IRegisterUserUseCase
 {
-    public ResponseRegisteredUser Execute(RequestRegisterUser request)
+    public async Task<ResponseRegisteredUser> Execute(RequestRegisterUser request)
     {
         Validate(request);
-        
+
         var user = mapper.Map<User>(request);
         user.Password = passwordEncripter.Encript(request.Password);
-        
+        await userRepository.Add(user);
+
         return new ResponseRegisteredUser();
     }
 

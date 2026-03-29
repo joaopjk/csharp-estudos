@@ -35,5 +35,11 @@ automatizados e monitoramento de desempenho.
 - **Otimização de custos**: Depende de todos os outros pilares, porém quão frugal você estar.
 - **Confiabilidade**: Capacidade de estar acima do SLA de disponibilidade, ser resiliente, estratégia de backup/restore,
 estratégia de disaster recovery.
+  - **Consistência**: Entrega os mesmos resultados ao realizar uma tarefa ou operação especifíca.
+  - **Disponibilidade**: Disponível e acessível aos usuários sempre que necessário, sem tempo de inatividade ou 
+  interrupções inesperadas
+  - **Durabilidade**: Resistência a períodos prolongados de uso ou operação sem degradação, ou falha
+  - **Tolerância a falhas**: Resistente a falhas ou erros e capaz de se recuperar de maneira segura
+  - **Previsibilidade**: Os usuários podem prever como o sistema se comporta, seja conforme o esperado ou não
 - **Operações**: Como todas as outras habilidades devem ser usadas sem comprometer a eficiência das operações? MTTR,
 automações, control planes

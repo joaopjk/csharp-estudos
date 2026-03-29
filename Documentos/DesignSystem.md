@@ -43,3 +43,19 @@ estratégia de disaster recovery.
   - **Previsibilidade**: Os usuários podem prever como o sistema se comporta, seja conforme o esperado ou não
 - **Operações**: Como todas as outras habilidades devem ser usadas sem comprometer a eficiência das operações? MTTR,
 automações, control planes
+
+# Ciclo de mudança de arquitetura
+Tete ao máximo ter sucesso e ser assertivo na mudança da sua arquitetura.
+- **AS-IS** | **TO-BE** | **POC** | **Migração Oficial** | **Testes** 
+
+# High Availability
+Alta disponibilidade: Sistema com alta disponibilidade, porém existe indisponibilidade, mesmo que pequena
+
+# Fault tolerance
+Sistema como capacidade de tolerar falhas sem gerar indisponibilidade
+
+# Escalabilidade Horizontal
+Adiciona mais servidores para aumentar a capacidade de processamento
+
+# Escalabilidade Vertical
+Adiciona mais capacidade em servidores existentes para aumentar o poder computacional

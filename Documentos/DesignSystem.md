@@ -59,3 +59,9 @@ Adiciona mais servidores para aumentar a capacidade de processamento
 
 # Escalabilidade Vertical
 Adiciona mais capacidade em servidores existentes para aumentar o poder computacional
+
+# Acordos de nível de serviçoes
+Fundamental na gestão de desempendo e qualidade de serviços em TI
+- **Service Level Indicator (SLI)**
+  - Indicadores de nível de serviço
+  - São métricas específicas e mensárveis utilizadas para ava

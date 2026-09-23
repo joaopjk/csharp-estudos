@@ -94,3 +94,28 @@
 - Sem duplicação de código
 - Expressar o propósito do programador
 - Minimizar o número de classes e métodos
+
+- Clareza e legibilidade
+- Código auto explicativo
+- Evite números mágicos
+- Nomes significativos
+- Organização e estrutura
+- Funções pequenas
+- Evite funções longas e complexas
+- Consistência
+- Evite duplicação
+- Remova código morto
+- Evite parâmetros booleanos. Prefira métodos separados com funções distintas
+- Prefira composição a herança: use composição para reutilização de código quando possível
+- Reduza o escopo da variável
+- Código testável
+- Evite dependências desnecessárias
+- Mantenha o código simples
+- Evite otimização prematura
+- Documentação mínima e útil
+- Padronização
+- Refatoração contínua
+- Utilize testes automatizados
+- Prefira imutabilidade
+- Evite abreviações e siglas obscuras
+- Mantenha o código limpo

@@ -13,3 +13,16 @@
 - Classes
 - Emergência
 ### [Solid](./ConceitosGerais/Solid.md)
+### [Boas práticas](./ConceitosGerais/BoasPraticas.md)
+- Kiss
+- Yagni
+- Dry
+- Baixo Acoplamento
+- Alta Coesão
+### [POO](./ConceitosGerais/Poo.md)
+- Objeto
+- Classe
+- Atributos
+- Métodos
+- Encapsulamento
+- Polimorfismo

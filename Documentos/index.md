@@ -21,6 +21,7 @@
   - Specification
   - Policy
   - Módulo
+- [CleanArch](./Arquitetura/CleanArch.md)
 
 ## Conceitos Gerais
 ### [Clean Code](./ConceitosGerais/CleanCode.md)
